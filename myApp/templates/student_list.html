@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-center mb-6">Student Portal</h1>
+
+        <!-- Table to display students and their results -->
+        <table class="table-auto w-full border-collapse border border-gray-300 mb-8">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="border border-gray-300 px-4 py-2 text-left">Name</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Roll</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Subject</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Phone</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Address</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Marks</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Grade</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Total Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">{{ student.name }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ student.roll }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ student.subject }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ student.phone }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ student.address }}</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                        {% for result in student.results.all %}
+                        {{ result.marks }}
+                        {% endfor %}
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                        {% for result in student.results.all %}
+                        {{ result.grade }}
+                        {% endfor %}
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                        {% for result in student.results.all %}
+                        {{ result.total_marks }}
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="8" class="text-center border border-gray-300 px-4 py-2">
+                        No students found.
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <!-- Add links to the views -->
+
+
+    <div class="flex justify-center space-x-4 mb-4">
+        <a href="{% url 'add_student' %}" class="bg-blue-500 text-white px-4 py-2 rounded">Add Student</a>
+    </div>
+
+    <!-- Assuming 'student' is a specific student object and you want links for update/delete for that student -->
+    {% for student in students %}
+    <div class="flex justify-center space-x-4">
+        <a href="{% url 'student_update' student.pk %}" class="bg-yellow-500 text-white px-4 py-2 rounded">Update</a>
+        <a href="{% url 'student_delete' student.pk %}" class="bg-red-500 text-white px-4 py-2 rounded">Delete</a>
+    </div>
+    {% endfor %}
+
+
+
+
+</body>
+
+</html>
