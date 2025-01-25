@@ -2,10 +2,13 @@ from django.shortcuts import render, redirect
 from .models import Student
 from .forms import StudentForm, ResultForm
 
+
+
 #CRUD OPERATIONS
 def student_list(request):
-    students = Student.objects.all()
-    return render(request, "student_list.html", {"students": students})
+    students = Student.objects.all()  # Fetch all students
+    return render(request, 'student_list.html', {'students': students})
+
 
 def add_student(request):
     if request.method == "POST":
@@ -57,7 +60,5 @@ def student_update(request, pk):
 def student_delete(request, pk):
     student = Student.objects.get(pk=pk)
     result = student.results.first()
-
-    if request.method == "POST":
-        student.delete()
-        return redirect("student_list")
+    student.delete()
+    return redirect("student_list")  # Replace with your URL name for the student list

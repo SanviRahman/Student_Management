@@ -1,0 +1,504 @@
+[
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "myApp.migrations.0001_initial",
+        "description": "myApp.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Student',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "myApp.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "myApp.migrations.0002_remove_student_course_student_address_student_phone",
+        "description": "myApp.migrations.0002_remove_student_course_student_address_student_phone",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('myApp', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='student',\n            name='course',\n        ),\n        migrations.AddField(",
+        "detail": "myApp.migrations.0002_remove_student_course_student_address_student_phone",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "myApp.migrations.0003_alter_result_student",
+        "description": "myApp.migrations.0003_alter_result_student",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('myApp', '0002_remove_student_course_student_address_student_phone'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='result',\n            name='student',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='results', to='myApp.student'),\n        ),",
+        "detail": "myApp.migrations.0003_alter_result_student",
+        "documentation": {}
+    },
+    {
+        "label": "MyappConfig",
+        "kind": 6,
+        "importPath": "myApp.apps",
+        "description": "myApp.apps",
+        "peekOfCode": "class MyappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'myApp'",
+        "detail": "myApp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "StudentForm",
+        "kind": 6,
+        "importPath": "myApp.forms",
+        "description": "myApp.forms",
+        "peekOfCode": "class StudentForm(forms.ModelForm):\n    class Meta:\n        model = Student\n        fields = (\"name\", \"roll\", \"subject\", \"phone\", \"address\")\nclass ResultForm(forms.ModelForm):\n    class Meta:\n        model = Result\n        fields = (\"marks\", \"grade\", \"total_marks\")",
+        "detail": "myApp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ResultForm",
+        "kind": 6,
+        "importPath": "myApp.forms",
+        "description": "myApp.forms",
+        "peekOfCode": "class ResultForm(forms.ModelForm):\n    class Meta:\n        model = Result\n        fields = (\"marks\", \"grade\", \"total_marks\")",
+        "detail": "myApp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Teacher",
+        "kind": 6,
+        "importPath": "myApp.models",
+        "description": "myApp.models",
+        "peekOfCode": "class Teacher(models.Model):\n    name = models.CharField(max_length=100)\n    email = models.EmailField(max_length=100)\n    phone = models.CharField(max_length=15)\n    address = models.TextField(max_length=200)\n    def __str__(self):\n        return self.name\nclass Student(models.Model):\n    name=models.CharField(max_length=100)\n    roll=models.IntegerField()",
+        "detail": "myApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "myApp.models",
+        "description": "myApp.models",
+        "peekOfCode": "class Student(models.Model):\n    name=models.CharField(max_length=100)\n    roll=models.IntegerField()\n    subject=models.CharField(max_length=100)\n    phone=models.CharField(max_length=15,blank=True,null=True)\n    address=models.TextField(max_length=200,blank=True,null=True)\n    def __str__(self):\n        return self.name\nclass Result(models.Model):\n    student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='results')",
+        "detail": "myApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Result",
+        "kind": 6,
+        "importPath": "myApp.models",
+        "description": "myApp.models",
+        "peekOfCode": "class Result(models.Model):\n    student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='results')\n    marks = models.IntegerField()\n    grade = models.CharField(max_length=10)\n    total_marks = models.IntegerField()\n    def __str__(self):\n        return f\"{self.student.name}\"",
+        "detail": "myApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "myApp.urls",
+        "description": "myApp.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.student_list, name='student_list'),\n    path('add_student', views.add_student, name='add_student'),\n    path('student_update/<int:pk>', views.student_update, name='student_update'),\n    path('student_delete/<int:pk>', views.student_delete, name='student_delete'),\n]",
+        "detail": "myApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "student_list",
+        "kind": 2,
+        "importPath": "myApp.views",
+        "description": "myApp.views",
+        "peekOfCode": "def student_list(request):\n    students = Student.objects.all()  # Fetch all students\n    return render(request, 'student_list.html', {'students': students})\ndef add_student(request):\n    if request.method == \"POST\":\n        student_form = StudentForm(request.POST)\n        result_form = ResultForm(request.POST)\n        if student_form.is_valid() and result_form.is_valid():\n            student = student_form.save()\n            result = result_form.save(commit=False)",
+        "detail": "myApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_student",
+        "kind": 2,
+        "importPath": "myApp.views",
+        "description": "myApp.views",
+        "peekOfCode": "def add_student(request):\n    if request.method == \"POST\":\n        student_form = StudentForm(request.POST)\n        result_form = ResultForm(request.POST)\n        if student_form.is_valid() and result_form.is_valid():\n            student = student_form.save()\n            result = result_form.save(commit=False)\n            result.student = student\n            result.save()\n            return redirect(\"student_list\")  # Replace with your URL name for the student list",
+        "detail": "myApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "student_update",
+        "kind": 2,
+        "importPath": "myApp.views",
+        "description": "myApp.views",
+        "peekOfCode": "def student_update(request, pk):\n    student = Student.objects.get(pk=pk)\n    result = student.results.first()\n    if request.method == \"POST\":\n        student_form = StudentForm(request.POST, instance=student)\n        result_form = ResultForm(request.POST, instance=result)\n        if student_form.is_valid() and result_form.is_valid():\n            student_form.save()\n            result_form.save()\n            return redirect(\"student_list\")  # Replace with your URL name for the student list  ",
+        "detail": "myApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "student_delete",
+        "kind": 2,
+        "importPath": "myApp.views",
+        "description": "myApp.views",
+        "peekOfCode": "def student_delete(request, pk):\n    student = Student.objects.get(pk=pk)\n    result = student.results.first()\n    student.delete()\n    return redirect(\"student_list\")  # Replace with your URL name for the student list",
+        "detail": "myApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "Student_Management.asgi",
+        "description": "Student_Management.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "Student_Management.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-%wmvn5yn)g#fjnt(7t+_!k--pj83386erv$b0wx#$1=s0o&0j7'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-%wmvn5yn)g#fjnt(7t+_!k--pj83386erv$b0wx#$1=s0o&0j7'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'myApp',",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'myApp',\n]\nMIDDLEWARE = [",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'Student_Management.urls'",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "ROOT_URLCONF = 'Student_Management.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'Student_Management.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "Student_Management.settings",
+        "description": "Student_Management.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "Student_Management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "Student_Management.urls",
+        "description": "Student_Management.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('myApp.urls')),\n]",
+        "detail": "Student_Management.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "Student_Management.wsgi",
+        "description": "Student_Management.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "Student_Management.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Student_Management.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

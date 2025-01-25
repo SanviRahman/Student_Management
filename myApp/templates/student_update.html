@@ -1,107 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result Update</title>
+    <title>Update Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <form action="" method="POST" class="bg-white shadow-md rounded-lg p-8">
-        {% csrf_token %}
-        <h2 class="text-xl font-semibold mb-4">Add Student</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Student Form Fields -->
-            <div>
-                <label for="id_name" class="block text-sm font-medium text-gray-700">Name:</label>
-                <input 
-                    type="text" 
-                    name="name" 
-                    id="id_name" 
-                    value="{{ student_form.name.value|default_if_none:'' }}"
-                    class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Enter Name">
+
+<body class="bg-gray-100 text-gray-800 min-h-screen flex items-center justify-center">
+    <div class="max-w-4xl w-full bg-white shadow-md rounded-lg p-8">
+        <form action="" method="POST" class="space-y-6">
+            {% csrf_token %}
+            <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">Update Student Information</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Student Form Fields -->
+                <div>
+                    <label for="id_name" class="block text-sm font-medium text-gray-700">Name:</label>
+                    <input type="text" name="name" id="id_name" value="{{ student_form.name.value|default_if_none:'' }}"
+                        class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+                        placeholder="Enter Name">
+                </div>
+                <div>
+                    <label for="id_roll" class="block text-sm font-medium text-gray-700">Roll:</label>
+                    <input type="number" name="roll" id="id_roll"
+                        value="{{ student_form.roll.value|default_if_none:'' }}"
+                        class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+                        placeholder="Enter Roll">
+                </div>
+                <div>
+                    <label for="id_subject" class="block text-sm font-medium text-gray-700">Subject:</label>
+                    <input type="text" name="subject" id="id_subject"
+                        value="{{ student_form.subject.value|default_if_none:'' }}"
+                        class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+                        placeholder="Enter Subject">
+                </div>
+                <div>
+                    <label for="id_phone" class="block text-sm font-medium text-gray-700">Phone:</label>
+                    <input type="text" name="phone" id="id_phone"
+                        value="{{ student_form.phone.value|default_if_none:'' }}"
+                        class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+                        placeholder="Enter Phone">
+                </div>
+                <div>
+                    <label for="id_address" class="block text-sm font-medium text-gray-700">Address:</label>
+                    <input type="text" name="address" id="id_address"
+                        value="{{ student_form.address.value|default_if_none:'' }}"
+                        class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+                        placeholder="Enter Address">
+                </div>
+
+                <!-- Result Form Fields -->
+                <div>
+                    <label for="id_marks" class="block text-sm font-medium text-gray-700">Marks:</label>
+                    <input type="number" name="marks" id="id_marks"
+                        value="{{ result_form.marks.value|default_if_none:'' }}"
+                        class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+                        placeholder="Enter Marks">
+                </div>
+                <div>
+                    <label for="id_grade" class="block text-sm font-medium text-gray-700">Grade:</label>
+                    <input type="text" name="grade" id="id_grade"
+                        value="{{ result_form.grade.value|default_if_none:'' }}"
+                        class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+                        placeholder="Enter Grade">
+                </div>
+                <div>
+                    <label for="id_total_marks" class="block text-sm font-medium text-gray-700">Total Marks:</label>
+                    <input type="number" name="total_marks" id="id_total_marks"
+                        value="{{ result_form.total_marks.value|default_if_none:'' }}"
+                        class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400"
+                        placeholder="Enter Total Marks">
+                </div>
             </div>
-            <div>
-                <label for="id_roll" class="block text-sm font-medium text-gray-700">Roll:</label>
-                <input 
-                    type="number" 
-                    name="roll" 
-                    id="id_roll" 
-                    value="{{ student_form.roll.value|default_if_none:'' }}"
-                    class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Enter Roll">
+
+            <div class="text-center">
+                <button type="submit"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out">
+                    Update Information
+                </button>
             </div>
-            <div>
-                <label for="id_subject" class="block text-sm font-medium text-gray-700">Subject:</label>
-                <input 
-                    type="text" 
-                    name="subject" 
-                    id="id_subject" 
-                    value="{{ student_form.subject.value|default_if_none:'' }}"
-                    class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Enter Subject">
-            </div>
-            <div>
-                <label for="id_phone" class="block text-sm font-medium text-gray-700">Phone:</label>
-                <input 
-                    type="text" 
-                    name="phone" 
-                    id="id_phone" 
-                    value="{{ student_form.phone.value|default_if_none:'' }}"
-                    class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Enter Phone">
-            </div>
-            <div>
-                <label for="id_address" class="block text-sm font-medium text-gray-700">Address:</label>
-                <input 
-                    type="text" 
-                    name="address" 
-                    id="id_address" 
-                    value="{{ student_form.address.value|default_if_none:'' }}"
-                    class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Enter Address">
-            </div>
-        
-            <!-- Result Form Fields -->
-            <div>
-                <label for="id_marks" class="block text-sm font-medium text-gray-700">Marks:</label>
-                <input 
-                    type="number" 
-                    name="marks" 
-                    id="id_marks" 
-                    value="{{ result_form.marks.value|default_if_none:'' }}"
-                    class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Enter Marks">
-            </div>
-            <div>
-                <label for="id_grade" class="block text-sm font-medium text-gray-700">Grade:</label>
-                <input 
-                    type="text" 
-                    name="grade" 
-                    id="id_grade" 
-                    value="{{ result_form.grade.value|default_if_none:'' }}"
-                    class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Enter Grade">
-            </div>
-            <div>
-                <label for="id_total_marks" class="block text-sm font-medium text-gray-700">Total Marks:</label>
-                <input 
-                    type="number" 
-                    name="total_marks" 
-                    id="id_total_marks" 
-                    value="{{ result_form.total_marks.value|default_if_none:'' }}"
-                    class="mt-1 border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Enter Total Marks">
-            </div>
-        </div>
-        <div class="mt-8 text-right">
-            <button 
-                type="submit" 
-                class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
-                Add Student
-            </button>
-        </div>
-    </form>
-    
+        </form>
+    </div>
 </body>
+
 </html>
